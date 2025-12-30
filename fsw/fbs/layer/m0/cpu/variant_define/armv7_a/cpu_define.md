@@ -1,4 +1,4 @@
-# cpu armv7_a
+# VARIANT_CPU = armv7_a
 
 - armv7_a is arm v7-a architecture.
 - armv7_a is 32bit.
