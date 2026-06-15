@@ -14,6 +14,15 @@ JYS stands for Just Your System. Pronunciation is Juice.
 - bottom-up prepares from known.
 - completion is where they meet.
 
+## rule
+
+- rule should reduce friction in collaboration.
+- rule should define term.
+- rule should be followable without full read.
+- rule should validate itself.
+- rule should have clear scope and end.
+- this rule itself tries to be so.
+
 ## directory rule
 
 1. base directory has a README.md. nested base can exist.
@@ -22,7 +31,8 @@ JYS stands for Just Your System. Pronunciation is Juice.
 4. local README.md can override rules.
 5. use snake_case.
 6. use singular.
-7. files in same base directory form a closed system.
+7. files in same base directory form a closed system: mutually consistent.
+8. appendix is outside closed system.
 
 ## depth 1 directories and files
 
