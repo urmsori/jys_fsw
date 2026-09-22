@@ -10,6 +10,28 @@
 - consistent: uniform pattern across codebase.
 - self-documenting: function name explains interface.
 
+## function name
+
+- thing: what is there. (example, ram)
+- action: what is done. (init, loop, interrupt)
+- a file is named {thing}, or {action}_{noun}.
+- a function is named {file}_{verb}_{noun}.
+
+```c
+// example.h: {thing}
+uint32_t example_get_count(example_id_t id);
+
+// init_ram.h: {action}_{noun}
+void init_ram(void);
+
+// loop.h: {action}
+void loop(void);
+
+// interrupt_wakeup.h: {action}_{noun}
+void interrupt_wakeup_register(void);
+uint32_t interrupt_wakeup_get_count(void);
+```
+
 ## return type
 
 - void: no return.
