@@ -19,8 +19,11 @@
 ## component
 
 - layer contains components.
-- procedure component: verb. (init, loop, interrupt)
-- module component: noun. (cpu, ram, rom)
+- component is a noun.
+- action: what is done.
+- thing: what is there.
+- procedure component: an action. (init, loop, interrupt)
+- module component: a thing. (cpu, ram, rom)
 
 ## dependency rule
 
@@ -54,27 +57,27 @@ graph LR
 
 ```
 p0/
-    {verb}/
+    {action}/
 p1/
-    {verb}/
+    {action}/
 p.../
-    {verb}/
+    {action}/
 m0/
-    {noun}/
+    {thing}/
 m1/
-    {noun}/
+    {thing}/
 m.../
-    {noun}/
+    {thing}/
 ```
 
 ```mermaid
 graph TD
-    A[p0] --> B["{verb}"]
-    C[p1] --> D["{verb}"]
-    E["p..."] --> F["{verb}"]
-    G[m0] --> H["{noun}"]
-    I[m1] --> J["{noun}"]
-    K["m..."] --> L["{noun}"]
+    A[p0] --> B["{action}"]
+    C[p1] --> D["{action}"]
+    E["p..."] --> F["{action}"]
+    G[m0] --> H["{thing}"]
+    I[m1] --> J["{thing}"]
+    K["m..."] --> L["{thing}"]
     
     A -.-> C -.-> E -.-> K -.-> I -.-> G
 ```
