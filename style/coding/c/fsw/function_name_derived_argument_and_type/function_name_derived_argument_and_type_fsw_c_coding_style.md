@@ -73,6 +73,34 @@ typedef int8_t example_set_data_result_t;
 #define EXAMPLE_SET_DATA_RESULT_ERROR_NULL_POINTER (-4)
 ```
 
+## argument name
+
+- {noun} is derived from function name.
+- input: {noun}. no suffix.
+- output: {noun}_out. function only writes.
+- input and output: {noun}_in_out. function reads, then writes.
+- suffix comes last: data_size_out, not data_out_size.
+
+```c
+// input: {noun}
+example_set_data_result_t example_set_data(
+    example_id_t id,
+    const uint8_t *data,
+    uint32_t data_size,
+    const struct example_set_data_options *options);
+
+// output: {noun}_out
+bool example_get_data(example_id_t id, uint8_t data_out[EXAMPLE_DATA_SIZE_MAX]);
+
+// input and output: {noun}_in_out
+// crc_in_out: in = previous crc, out = updated crc
+void example_update_crc(
+    example_id_t id,
+    const uint8_t *data,
+    uint32_t data_size,
+    uint16_t *crc_in_out);
+```
+
 ## argument order
 
 1. instance/descriptor (id)
