@@ -1,5 +1,9 @@
 # eo satellite
 
+## scheduling
+
+- preemptive fixed priority. ex: rtos.
+
 ## scope
 
 - image data goes from camera to mass memory to x band without obc context.
@@ -20,12 +24,12 @@
 
 ## task table
 
-| task | kind | deadline | priority | work |
-| --- | --- | --- | --- | --- |
-| `timer_10hz_task` | periodic | 100ms | 1 | attitude control, target pointing |
-| `timer_1hz_task` | periodic | 1s | 2 | command and telemetry, mode, imaging schedule, power and thermal |
-| `flash_task` | sporadic | 10s | 3 | log store, dump read, upload file store |
-| `plan_task` | sporadic | 300s | 4 | imaging plan |
+| task | kind | device wait | deadline | priority | work |
+| --- | --- | --- | --- | --- | --- |
+| `timer_10hz_task` | periodic | no | 100ms | 1 | attitude control, target pointing |
+| `timer_1hz_task` | periodic | no | 1s | 2 | command and telemetry, mode, imaging schedule, power and thermal |
+| `flash_task` | sporadic | yes | 10s | 3 | log store, dump read, upload file store |
+| `plan_task` | sporadic | no | 300s | 4 | imaging plan |
 
 ## matrix
 
@@ -69,3 +73,4 @@
 | 4 | pass |
 | 5 | pass |
 | 6 | pass |
+| 7 | pass |
