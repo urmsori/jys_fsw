@@ -1,5 +1,9 @@
 # pnt satellite
 
+## scheduling
+
+- preemptive fixed priority. ex: rtos.
+
 ## isr
 
 | isr | released by | work |
@@ -13,12 +17,12 @@
 
 ## task table
 
-| task | kind | deadline | priority | work |
-| --- | --- | --- | --- | --- |
-| `timer_10hz_task` | periodic | 100ms | 1 | attitude control |
-| `timer_1hz_task` | periodic | 1s | 2 | clock, integrity, navigation message, mode, command and telemetry |
-| `orbit_task` | sporadic | 10s | 3 | orbit determination and prediction, ephemeris |
-| `flash_task` | sporadic | 60s | 4 | log store, dump read, upload file store |
+| task | kind | device wait | deadline | priority | work |
+| --- | --- | --- | --- | --- | --- |
+| `timer_10hz_task` | periodic | no | 100ms | 1 | attitude control |
+| `timer_1hz_task` | periodic | no | 1s | 2 | clock, integrity, navigation message, mode, command and telemetry |
+| `orbit_task` | sporadic | no | 10s | 3 | orbit determination and prediction, ephemeris |
+| `flash_task` | sporadic | yes | 60s | 4 | log store, dump read, upload file store |
 
 ## matrix
 
@@ -60,3 +64,4 @@
 | 4 | pass |
 | 5 | pass |
 | 6 | pass |
+| 7 | pass |
