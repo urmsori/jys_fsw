@@ -17,7 +17,7 @@ JYS stands for Just Your System. Pronunciation is Juice.
 ## collaboration rule
 
 - it's better if a rule reduces friction in collaboration.
-- it's better if a rule defines ambiguous words on first use.
+- it's better if a rule defines its terms on first use.
 - it's better if a rule can be followed without a full read.
 - it's better if a rule is applied to itself.
 - it's better to fix a rule if it is often broken.
