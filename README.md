@@ -16,11 +16,11 @@ JYS stands for Just Your System. Pronunciation is Juice.
 
 ## collaboration rule
 
-- rule should reduce friction in collaboration.
-- rule should define term.
-- rule should be followable without full read.
-- rule should validate itself.
-- rule should be fixed if often broken.
+- it's better if a rule reduces friction in collaboration.
+- it's better if a rule defines its terms.
+- it's better if a rule can be followed without a full read.
+- it's better if a rule validates itself.
+- it's better to fix a rule if it is often broken.
 - this rule itself tries to be so.
 
 ## directory rule
