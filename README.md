@@ -14,13 +14,13 @@ JYS stands for Just Your System. Pronunciation is Juice.
 - bottom-up prepares from known.
 - completion is where they meet.
 
-## rule
+## collaboration rule
 
 - rule should reduce friction in collaboration.
 - rule should define term.
 - rule should be followable without full read.
 - rule should validate itself.
-- rule should have clear scope and end.
+- rule should be fixed if often broken.
 - this rule itself tries to be so.
 
 ## directory rule
